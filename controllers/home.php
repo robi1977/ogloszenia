@@ -7,7 +7,7 @@ class HomeController extends Controller{
 
   protected function Index(){
     $model = new Home();
-    $this->eturnView('index');
+    $this->returnView('index');
   }
 }
 ?>

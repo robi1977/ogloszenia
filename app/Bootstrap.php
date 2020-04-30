@@ -15,7 +15,7 @@ class Bootstrap{
 
   public function createController(){
     //sprawdzanie czy istnieje klasa
-    if(is_obiect($this->controller)){
+    if(is_object($this->controller)){
       $parents = class_parents($this->controller);
       //sprawdzenie rozszerzeń klasy i czy istnieje dana metoda
       if(in_array("Controller", $parents)){
