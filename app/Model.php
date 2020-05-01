@@ -4,7 +4,7 @@ abstract class Model{
   protected $stmt;
 
   public function __construct(){
-    $this->dbh = new PDO("mysql:host=".DB_HOST."dbname=".DB_BASE, DB_USER, DB_PASS);
+    $this->dbh = new PDO("mysql:host=".DB_HOST.";dbname=".DB_BASE, DB_USER, DB_PASS); //UWAGA: na myślnik przed "dbname" jest potrzebny
   }
 
   public function query($query){
