@@ -9,7 +9,7 @@ class UsersController extends Controller{
     $this->returnView('register');
   }
 
-  public function createAccont(){
+  public function createAccount(){
     $model = new User();
     if($model->register()){
       Message::setMsg("Konto utworzone", "success");
