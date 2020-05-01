@@ -1,5 +1,5 @@
 <div class="panel panel-default">
-  <div class="panelheading">
+  <div class="panel-heading">
     <h3 class="panel-title">Zarejestruj się</h3>
   </div>
   <div class="panel-body">
