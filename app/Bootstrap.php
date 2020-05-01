@@ -24,6 +24,8 @@ class Bootstrap{
         }else{
           // brak wywoływanej metody
           echo "<h1> Metoda nie istnieje</h1>";
+          print_r($this->controller);
+          print_r($this->request);
           return;
         }
       }else{
@@ -41,7 +43,7 @@ class Bootstrap{
   private function processRequest(){
     
     if($this->request == '/'){
-      $this->controller = new HomeControler($this->action, $this->argument);
+      $this->controller = new HomeController($this->action, $this->argument);
       return;
     }
 
